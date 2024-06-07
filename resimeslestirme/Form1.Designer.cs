@@ -30,8 +30,6 @@
         {
             label1 = new Label();
             kolayseviye = new Button();
-            ortaseviye = new Button();
-            zorseviye = new Button();
             SuspendLayout();
             // 
             // label1
@@ -47,35 +45,14 @@
             // kolayseviye
             // 
             kolayseviye.BackColor = Color.PaleTurquoise;
+            kolayseviye.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             kolayseviye.Location = new Point(217, 173);
             kolayseviye.Name = "kolayseviye";
             kolayseviye.Size = new Size(130, 48);
             kolayseviye.TabIndex = 1;
-            kolayseviye.Text = "Kolay Seviye ";
+            kolayseviye.Text = "Oyna";
             kolayseviye.UseVisualStyleBackColor = false;
             kolayseviye.Click += kolayseviye_Click;
-            // 
-            // ortaseviye
-            // 
-            ortaseviye.BackColor = Color.PaleTurquoise;
-            ortaseviye.Location = new Point(217, 242);
-            ortaseviye.Name = "ortaseviye";
-            ortaseviye.Size = new Size(130, 48);
-            ortaseviye.TabIndex = 1;
-            ortaseviye.Text = "Orta Seviye";
-            ortaseviye.UseVisualStyleBackColor = false;
-            ortaseviye.Click += ortaseviye_Click;
-            // 
-            // zorseviye
-            // 
-            zorseviye.BackColor = Color.PaleTurquoise;
-            zorseviye.Location = new Point(217, 313);
-            zorseviye.Name = "zorseviye";
-            zorseviye.Size = new Size(130, 48);
-            zorseviye.TabIndex = 1;
-            zorseviye.Text = "Zor Seviye";
-            zorseviye.UseVisualStyleBackColor = false;
-            zorseviye.Click += zorseviye_Click;
             // 
             // Form1
             // 
@@ -83,8 +60,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(586, 524);
-            Controls.Add(zorseviye);
-            Controls.Add(ortaseviye);
             Controls.Add(kolayseviye);
             Controls.Add(label1);
             Name = "Form1";
@@ -97,7 +72,5 @@
 
         private Label label1;
         private Button kolayseviye;
-        private Button ortaseviye;
-        private Button zorseviye;
     }
 }

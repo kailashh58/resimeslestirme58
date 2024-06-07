@@ -23,16 +23,8 @@ namespace resimeslestirme
             form2.Show();
         }
 
-        private void ortaseviye_Click(object sender, EventArgs e)
-        {
-            Form3 form3 = new Form3();
-            form3.Show();
-        }
+        
 
-        private void zorseviye_Click(object sender, EventArgs e)
-        {
-            Form4 form4 = new Form4();
-            form4.Show();
-        }
+       
     }
 }
