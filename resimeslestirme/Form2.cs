@@ -81,7 +81,7 @@ namespace resimeslestirme
 
                 if(picA.Tag != null && picA.Image == null)
                 {
-                    picA.Image = Image.FromFile("pictures/" + (string)picA.Tag + ".png");
+                    picA.Image = Image.FromFile("../../../pictures/" + (string)picA.Tag + ".png");
                     birincisecenek = (string)picA.Tag;
                 }
             
@@ -95,7 +95,7 @@ namespace resimeslestirme
 
                 if (picB.Tag != null && picB.Image == null)
                 {
-                    picB.Image = Image.FromFile("pictures/" + (string)picB.Tag + ".png");
+                    picA.Image = Image.FromFile("../../../pictures/" + (string)picA.Tag + ".png"); ;
                     ikincisecenek = (string)picB.Tag;
 
                 }
@@ -159,9 +159,9 @@ namespace resimeslestirme
         }
         private void gameover(string msg)
         {
-            //GameTImer.Stop();
+            
             gameIsOver = true;
-            // if all of the picture boxes dont have any tags left in them. 
+             
             MessageBox.Show(msg + " Tekrar oynamak için tıklayın.");
         }
 
