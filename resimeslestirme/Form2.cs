@@ -95,7 +95,7 @@ namespace resimeslestirme
 
                 if (picB.Tag != null && picB.Image == null)
                 {
-                    picA.Image = Image.FromFile("../../../pictures/" + (string)picA.Tag + ".png"); ;
+                    picB.Image = Image.FromFile("../../../pictures/" + (string)picB.Tag + ".png");
                     ikincisecenek = (string)picB.Tag;
 
                 }
